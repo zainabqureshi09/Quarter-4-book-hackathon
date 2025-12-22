@@ -1,0 +1,30 @@
+{
+  "id": "module-2-digital-twin/sensor-simulation",
+  "title": "Sensor Simulation: LiDAR, Depth Camera, IMU",
+  "description": "Configuring simulated sensors and ROS 2 bridges for humanoids.",
+  "source": "@site/docs/module-2-digital-twin/sensor-simulation.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/sensor-simulation",
+  "permalink": "/docs/module-2-digital-twin/sensor-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-digital-twin/sensor-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "id": "sensor-simulation",
+    "title": "Sensor Simulation: LiDAR, Depth Camera, IMU",
+    "description": "Configuring simulated sensors and ROS 2 bridges for humanoids.",
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF & SDF for Humanoid Robots",
+    "permalink": "/docs/module-2-digital-twin/urdf-sdf-humanoids"
+  },
+  "next": {
+    "title": "Unity for High-Fidelity HRI",
+    "permalink": "/docs/module-2-digital-twin/unity-hri"
+  }
+}

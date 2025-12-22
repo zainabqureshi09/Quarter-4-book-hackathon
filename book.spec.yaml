@@ -1,0 +1,350 @@
+spec_version: "spec-kit-plus/v1"
+project:
+  name: "Physical AI & Humanoid Robotics"
+  repo_path: "c:\\Users\\Zainabayaz\\OneDrive\\Desktop\\hachathon1"
+  docusaurus_compatible: true
+  module_order:
+    - "Module 1: ROS 2 – The Robotic Nervous System"
+    - "Module 2: Digital Twin – Gazebo & Unity"
+    - "Module 3: AI-Robot Brain – NVIDIA Isaac"
+    - "Module 4: Vision-Language-Action (VLA)"
+    - "Capstone Project"
+purpose:
+  statement: "Create an AI-native, modular, spec-driven textbook that teaches end-to-end humanoid robotics using ROS 2, simulation, NVIDIA Isaac, and Vision-Language-Action, with bilingual support and RAG-based question answering."
+  outcomes:
+    - "Learners can build, simulate, and control humanoid systems."
+    - "Content is reusable across levels (Beginner/Intermediate/Advanced)."
+    - "RAG chatbot delivers accurate, cited answers from the textbook."
+target_audience:
+  personas:
+    - id: beginner_student
+      description: "Undergraduate or self-learner new to robotics and AI."
+      goals:
+        - "Understand ROS 2 basics and simulation fundamentals."
+        - "Run example code and visualize robot behavior."
+      constraints:
+        - "Limited hardware; prefers simulation-only paths."
+        - "Needs simplified explanations."
+    - id: intermediate_engineer
+      description: "Developer familiar with Python/ROS seeking integration skills."
+      goals:
+        - "Integrate ROS 2 with Gazebo/Unity and Isaac Sim."
+        - "Optimize QoS and deploy accelerated perception."
+      constraints:
+        - "Has access to Jetson or NVIDIA GPU; time-boxed projects."
+    - id: advanced_researcher
+      description: "Graduate-level or industry researcher building VLA and RL systems."
+      goals:
+        - "Train RL policies on GPU and deploy VLA inference."
+        - "Benchmark safety, reliability, and sim-to-real transfer."
+      constraints:
+        - "Requires clear APIs, reproducibility, and measurable SLOs."
+functional_requirements:
+  - id: FR-001
+    description: "Provide modular chapters aligned to the official hackathon syllabus."
+    acceptance_criteria:
+      - "All modules and chapters present learning outcomes, tools, hardware dependency."
+      - "Chapters include Beginner/Intermediate/Advanced personalization markers."
+  - id: FR-003
+    description: "Support RAG-based QA: chunked summaries, metadata, and citations."
+    acceptance_criteria:
+      - "RAG summary blocks exist for every chapter with metadata tags."
+  - id: FR-004
+    description: "Include code examples (ROS 2/Python/pseudo-code) and runnable snippets."
+    acceptance_criteria:
+      - "Examples compile or run in sim-only environments without hardware by default."
+  - id: FR-005
+    description: "Expose Docusaurus navigation with module/category structure."
+    acceptance_criteria:
+      - "Sidebar shows Intro and each module category with chapter pages."
+  - id: FR-006
+    description: "Personalization toggles for Beginner/Intermediate/Advanced views."
+    acceptance_criteria:
+      - "Frontmatter or UI tags permit filtering content per level."
+  - id: FR-007
+    description: "Include hardware dependency labels (Sim-only/Jetson/Full robot)."
+    acceptance_criteria:
+      - "Each chapter declares hardware tier and alternatives."
+non_functional_requirements:
+  - id: NFR-001
+    category: performance
+    target: "RAG retrieval latency under 1200 ms for top-3 results on local vector store."
+    measure: "p95 latency across 100 queries."
+  - id: NFR-002
+    category: reliability
+    target: "Citation accuracy ≥ 0.95 with file_path:line_number references."
+    measure: "Manual audit of 50 RAG answers."
+  - id: NFR-003
+    category: usability
+    target: "Beginner view reduces advanced sections while preserving code runnable paths."
+    measure: "Learner survey and task success rate ≥ 0.9 for setup and run."
+  - id: NFR-004
+    category: maintainability
+    target: "Spec-driven content enabling chapter updates without breaking navigation."
+    measure: "No broken links after edits; CI link check passes."
+content_model:
+  chapter_schema:
+    required_fields:
+      - learning_objectives
+      - core_explanation
+      - beginner_simplification
+      - advanced_deep_dive
+      - code_examples
+      - real_world_context
+      - exercises
+      - assessment_questions
+      - rag_summaries_chunked
+    personalization_levels:
+      - beginner
+      - intermediate
+      - advanced
+    hardware_dependency:
+      enum:
+        - sim_only
+        - jetson
+        - full_robot
+  modules:
+    - name: "Module 1: ROS 2 – The Robotic Nervous System"
+      path: "docs/module-1-ros2"
+      chapters:
+        - id: ros2-intro
+          title: "Introduction to ROS 2"
+          file: "ros2-intro.md"
+          difficulty: beginner
+          hardware_dependency: sim_only
+        - id: ros2-architecture
+          title: "ROS 2 Architecture"
+          file: "ros2-architecture.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: ros2-communication
+          title: "Nodes, Topics, Services, Actions"
+          file: "ros2-communication.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: rclpy-python-agents
+          title: "rclpy and Python Agents"
+          file: "rclpy-python-agents.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: urdf-humanoids
+          title: "URDF for Humanoids"
+          file: "urdf-humanoids.md"
+          difficulty: beginner
+          hardware_dependency: sim_only
+    - name: "Module 2: Digital Twin – Gazebo & Unity"
+      path: "docs/module-2-digital-twin"
+      chapters:
+        - id: digital-twin-intro
+          title: "Introduction to Digital Twins"
+          file: "digital-twin-intro.md"
+          difficulty: beginner
+          hardware_dependency: sim_only
+        - id: gazebo-setup
+          title: "Gazebo Setup"
+          file: "gazebo-setup.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: physics-fundamentals
+          title: "Physics Fundamentals"
+          file: "physics-fundamentals.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: sensor-simulation
+          title: "Sensor Simulation"
+          file: "sensor-simulation.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: unity-hri
+          title: "Unity for HRI"
+          file: "unity-hri.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: urdf-sdf-humanoids
+          title: "URDF & SDF for Humanoids"
+          file: "urdf-sdf-humanoids.md"
+          difficulty: advanced
+          hardware_dependency: sim_only
+    - name: "Module 3: AI-Robot Brain – NVIDIA Isaac"
+      path: "docs/module-3-ai-robot-brain"
+      chapters:
+        - id: isaac-intro
+          title: "Introduction to Isaac"
+          file: "isaac-intro.md"
+          difficulty: beginner
+          hardware_dependency: sim_only
+        - id: isaac-ecosystem
+          title: "Isaac Ecosystem"
+          file: "isaac-ecosystem.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: isaac-sim-photoreal
+          title: "Isaac Sim & Photorealism"
+          file: "isaac-sim-photoreal.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: synthetic-data-humanoids
+          title: "Synthetic Data for Humanoids"
+          file: "synthetic-data-humanoids.md"
+          difficulty: advanced
+          hardware_dependency: sim_only
+    - name: "Module 4: Vision-Language-Action (VLA)"
+      path: "docs/module-4-vla"
+      chapters:
+        - id: vla-intro
+          title: "Introduction to VLA"
+          file: "vla-intro.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: vla-multimodal-foundations
+          title: "Multimodal Foundations"
+          file: "vla-multimodal-foundations.md"
+          difficulty: advanced
+          hardware_dependency: sim_only
+          status: planned
+        - id: vla-ros2-integration
+          title: "VLA & ROS 2 Integration"
+          file: "vla-ros2-integration.md"
+          difficulty: advanced
+          hardware_dependency: jetson
+          status: planned
+    - name: "Capstone Project"
+      path: "docs/capstone-project"
+      chapters:
+        - id: capstone-intro
+          title: "Capstone Introduction"
+          file: "capstone-intro.md"
+          difficulty: intermediate
+          hardware_dependency: sim_only
+        - id: capstone-implementation
+          title: "Implementation Guide"
+          file: "capstone-implementation.md"
+          difficulty: advanced
+          hardware_dependency: sim_only
+          status: planned
+ai_agents:
+  - id: ContentAgent
+    type: "generator"
+    role: "Textbook Content Architect"
+    responsibilities:
+      - "Generate structured Markdown/MDX content based on schema."
+      - "Ensure code correctness and file structure alignment."
+    inputs:
+      - "Module/Chapter Schema"
+      - "Technical Syllabus"
+    outputs:
+      - "Docusaurus MDX files"
+    tools:
+      - "Trae IDE"
+      - "Linter"
+    reusability: "High - Can be retasked for any technical documentation."
+  - id: PersonalizationAgent
+    type: "manager"
+    role: "Context & Profile Manager"
+    responsibilities:
+      - "Manage user profiles (Expertise, Hardware)."
+      - "Serve adaptive content blocks based on auth context."
+    inputs:
+      - "User Session (Better-Auth)"
+      - "Hardware Specs"
+    outputs:
+      - "Filtered Content View"
+    tools:
+      - "Better-Auth"
+      - "React Context API"
+    reusability: "Medium - Tied to React/Auth implementation."
+  - id: RAGPipelineAgent
+    type: "service"
+    role: "Knowledge Retrieval Service"
+    responsibilities:
+      - "Index content chunks with metadata."
+      - "Retrieve and synthesize answers for user queries."
+    inputs:
+      - "MDX Corpus"
+      - "User Query"
+    outputs:
+      - "Vector Index"
+      - "Cited Answer"
+    tools:
+      - "Vector DB (FAISS/Neon)"
+      - "LLM Embedding Model"
+    reusability: "High - Standard RAG architecture."
+  - id: DevOpsAgent
+    type: "automation"
+    role: "CI/CD & Quality Assurance"
+    responsibilities:
+      - "Validate spec compliance."
+      - "Build Docusaurus site."
+      - "Check broken links and syntax."
+    inputs:
+      - "Git Repository"
+    outputs:
+      - "Production Build"
+      - "Test Reports"
+    tools:
+      - "GitHub Actions"
+      - "Docusaurus CLI"
+    reusability: "High - Standard CI/CD pipeline."
+personalization:
+  levels:
+    beginner:
+      description: "Simplified narrative; minimal math; runnable demos."
+    intermediate:
+      description: "Core explanations; standard APIs; tuning guidance."
+    advanced:
+      description: "Deep dives; performance; research-grade practices."
+  delivery:
+    mechanism:
+      - "Frontmatter tags: level: beginner|intermediate|advanced"
+      - "MDX components to show/hide sections by level"
+  gating_rules:
+    - "If beginner selected, hide advanced and show beginner blocks."
+    - "Intermediate shows core explanations and code."
+    - "Advanced reveals deep-dive and benchmarking sections."
+rag_chatbot:
+  indexing:
+    chunking:
+      size_chars: 1200
+      overlap_chars: 200
+      preserve_headings: true
+    embeddings:
+      model_name: "configurable"
+      dimensions: 1536
+    metadata:
+      fields:
+        - module
+        - chapter_id
+        - level
+        - language
+        - code_refs
+        - file_path
+  retrieval:
+    top_k: 5
+    filters:
+      language: "en"
+      level: "beginner|intermediate|advanced"
+  qa_pipeline:
+    steps:
+      - "retrieve"
+      - "re_rank"
+      - "synthesize"
+      - "cite"
+    output_format:
+      include_citations: true
+      citation_format: "file_path:line_number"
+  evaluation:
+    metrics:
+      - "answer_precision"
+      - "citation_accuracy"
+      - "latency_p95"
+governance:
+  versioning:
+    content_version: "v1"
+    index_version_strategy: "semantic + timestamp"
+  change_management:
+    approvals_required: 1
+    link_check_on_merge: true
+acceptance_criteria:
+  - "All chapters include required fields and hardware dependency labels."
+  - "RAG summaries present and indexed with metadata."
+  - "Sidebar and navigation reflect module order."

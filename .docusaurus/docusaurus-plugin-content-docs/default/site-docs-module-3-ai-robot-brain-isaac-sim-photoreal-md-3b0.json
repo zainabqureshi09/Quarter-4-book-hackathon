@@ -1,0 +1,30 @@
+{
+  "id": "module-3-ai-robot-brain/isaac-sim-photoreal",
+  "title": "Isaac Sim and Photorealistic Simulation",
+  "description": "USD, ray tracing, sensors, and ROS 2 bridge for humanoids.",
+  "source": "@site/docs/module-3-ai-robot-brain/isaac-sim-photoreal.md",
+  "sourceDirName": "module-3-ai-robot-brain",
+  "slug": "/module-3-ai-robot-brain/isaac-sim-photoreal",
+  "permalink": "/docs/module-3-ai-robot-brain/isaac-sim-photoreal",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3-ai-robot-brain/isaac-sim-photoreal.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "isaac-sim-photoreal",
+    "title": "Isaac Sim and Photorealistic Simulation",
+    "description": "USD, ray tracing, sensors, and ROS 2 bridge for humanoids.",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to NVIDIA Isaac Ecosystem",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-ecosystem"
+  },
+  "next": {
+    "title": "Synthetic Data Generation for Humanoid Robots",
+    "permalink": "/docs/module-3-ai-robot-brain/synthetic-data-humanoids"
+  }
+}

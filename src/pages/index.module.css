@@ -1,0 +1,102 @@
+/* CSS Modules for Index Page */
+
+.heroBanner {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  width: 100%;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.buttons {
+  margin: 2rem 0 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Features Section */
+.features {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Particle Animation */
+.particleContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  20% { opacity: 0.5; }
+  80% { opacity: 0.5; }
+  100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+/* Roadmap Steps */
+.stepCard {
+  background: rgba(255,255,255,0.02);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  padding: 2rem 1.5rem;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.stepCard:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+  border-left-color: var(--color-primary);
+}
+
+.stepNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.05);
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  line-height: 1;
+}
+
+.stepCard:hover .stepNumber {
+  color: rgba(0, 240, 255, 0.2);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .heroBanner {
+    min-height: auto;
+    padding: 6rem 0;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+}

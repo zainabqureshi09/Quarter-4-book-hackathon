@@ -1,0 +1,30 @@
+{
+  "id": "module-2-digital-twin/digital-twin-intro",
+  "title": "Module 2: Digital Twin – Gazebo & Unity",
+  "description": "Simulating humanoid physics and environments using Gazebo and Unity.",
+  "source": "@site/docs/module-2-digital-twin/digital-twin-intro.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/digital-twin-intro",
+  "permalink": "/docs/module-2-digital-twin/digital-twin-intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-digital-twin/digital-twin-intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "id": "digital-twin-intro",
+    "title": "Module 2: Digital Twin – Gazebo & Unity",
+    "description": "Simulating humanoid physics and environments using Gazebo and Unity."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF for Humanoid Robots",
+    "permalink": "/docs/module-1-ros2/urdf-humanoids"
+  },
+  "next": {
+    "title": "Physics Simulation Fundamentals",
+    "permalink": "/docs/module-2-digital-twin/physics-fundamentals"
+  }
+}

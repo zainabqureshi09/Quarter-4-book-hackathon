@@ -1,0 +1,48 @@
+---
+sidebar_position: 10
+title: "Auth & Personalization Demo"
+---
+
+import AdaptiveBlock from '@site/src/components/AdaptiveBlock';
+
+# Authentication & Personalization Demo
+
+This page demonstrates the adaptive content system. Use the **Auth Debug** panel (bottom-right) to toggle your login status and change your profile.
+
+## 1. Expertise Level Content
+
+<AdaptiveBlock level="beginner">
+
+### Beginner Content
+This section is visible to **Everyone**.
+*Robots are cool machines that move.*
+
+</AdaptiveBlock>
+
+<AdaptiveBlock level="intermediate">
+
+### Intermediate Content
+This section is collapsed for Beginners, but open for Intermediate/Advanced users.
+*ROS 2 uses DDS for middleware communication.*
+
+</AdaptiveBlock>
+
+<AdaptiveBlock level="advanced">
+
+### Advanced Content
+This section is collapsed for everyone except Advanced users.
+*We optimize end-to-end latency using zero-copy transport in shared memory.*
+
+</AdaptiveBlock>
+
+---
+
+## 2. Hardware-Specific Content
+
+<AdaptiveBlock requiresGpu={true}>
+
+### NVIDIA Isaac Sim Setup
+**Requirement**: This block checks if you have an NVIDIA GPU.
+If you see this without a warning, your profile says you have a GPU!
+
+</AdaptiveBlock>
