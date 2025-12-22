@@ -1,7 +1,7 @@
 {
   "id": "intro",
-  "title": "Introduction to Physical AI & Humanoid Robotics",
-  "description": "Welcome to the comprehensive textbook on Physical AI and Humanoid Robotics.",
+  "title": "Physical AI & Humanoid Robotics",
+  "description": "Build robots that see, speak, plan, and act. This textbook takes you from ROS 2 fundamentals to AI-native humanoid control with NVIDIA Isaac and Vision-Language-Action (VLA) agents.",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/intro",

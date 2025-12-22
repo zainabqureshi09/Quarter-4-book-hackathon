@@ -114,6 +114,41 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 0 10px var(--color-primary);
 }
 
+/* Markdown content readability */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.markdown table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1rem;
+  color: var(--color-text-dim);
+}
+
+.markdown a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+[data-theme='dark'] pre, [data-theme='dark'] code {
+  background-color: #0f172a;
+}
+[data-theme='light'] pre, [data-theme='light'] code {
+  background-color: #f5f7fb;
+}
+
 /* Hero Section */
 .hero {
   padding: 8rem 0 6rem;
