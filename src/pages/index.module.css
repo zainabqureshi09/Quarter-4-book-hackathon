@@ -99,4 +99,12 @@
     flex-direction: column;
     padding: 0 2rem;
   }
+
+  .features {
+    padding: 3rem 0;
+  }
+
+  .stepCard {
+    margin-bottom: 1rem;
+  }
 }

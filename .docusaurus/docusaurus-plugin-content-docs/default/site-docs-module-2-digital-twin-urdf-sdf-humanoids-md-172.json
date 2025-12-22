@@ -1,0 +1,30 @@
+{
+  "id": "module-2-digital-twin/urdf-sdf-humanoids",
+  "title": "URDF & SDF for Humanoid Robots",
+  "description": "Modeling humanoids with URDF/XACRO and SDF worlds for simulation.",
+  "source": "@site/docs/module-2-digital-twin/urdf-sdf-humanoids.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/urdf-sdf-humanoids",
+  "permalink": "/docs/module-2-digital-twin/urdf-sdf-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-digital-twin/urdf-sdf-humanoids.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "urdf-sdf-humanoids",
+    "title": "URDF & SDF for Humanoid Robots",
+    "description": "Modeling humanoids with URDF/XACRO and SDF worlds for simulation.",
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gazebo Environment Setup",
+    "permalink": "/docs/module-2-digital-twin/gazebo-setup"
+  },
+  "next": {
+    "title": "Sensor Simulation: LiDAR, Depth Camera, IMU",
+    "permalink": "/docs/module-2-digital-twin/sensor-simulation"
+  }
+}

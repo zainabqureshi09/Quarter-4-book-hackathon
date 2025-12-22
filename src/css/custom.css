@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 6vw, 4.5rem);
   line-height: 1.1;
   background: linear-gradient(135deg, #fff 0%, #b0b0b0 100%);
   -webkit-background-clip: text;
@@ -287,6 +287,27 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Responsiveness */
 @media (max-width: 996px) {
   .hero__title {
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 6vw, 3rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons .button {
+    width: 100%;
+  }
+  .featureCard {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .particleContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__logo {
+    height: 2rem;
   }
 }

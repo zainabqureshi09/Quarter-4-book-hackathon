@@ -1,0 +1,15 @@
+{
+  "id": "URDU_TRANSLATION_KIT",
+  "title": "Urdu Translation Agent & Integration Kit",
+  "description": "This kit contains the integration plan for a \"Button-Based\" Urdu translation toggle in Docusaurus and the translated content for the textbook.",
+  "source": "@site/docs/URDU_TRANSLATION_KIT.md",
+  "sourceDirName": ".",
+  "slug": "/URDU_TRANSLATION_KIT",
+  "permalink": "/docs/URDU_TRANSLATION_KIT",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/URDU_TRANSLATION_KIT.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

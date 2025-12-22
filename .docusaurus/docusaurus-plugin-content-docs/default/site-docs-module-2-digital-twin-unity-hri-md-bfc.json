@@ -1,0 +1,30 @@
+{
+  "id": "module-2-digital-twin/unity-hri",
+  "title": "Unity for High-Fidelity HRI",
+  "description": "Unity Robotics Hub, ROS–TCP Bridge, and interactive HRI scenes.",
+  "source": "@site/docs/module-2-digital-twin/unity-hri.md",
+  "sourceDirName": "module-2-digital-twin",
+  "slug": "/module-2-digital-twin/unity-hri",
+  "permalink": "/docs/module-2-digital-twin/unity-hri",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2-digital-twin/unity-hri.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "unity-hri",
+    "title": "Unity for High-Fidelity HRI",
+    "description": "Unity Robotics Hub, ROS–TCP Bridge, and interactive HRI scenes.",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensor Simulation: LiDAR, Depth Camera, IMU",
+    "permalink": "/docs/module-2-digital-twin/sensor-simulation"
+  },
+  "next": {
+    "title": "Module 3: AI-Robot Brain – NVIDIA Isaac",
+    "permalink": "/docs/module-3-ai-robot-brain/isaac-intro"
+  }
+}
