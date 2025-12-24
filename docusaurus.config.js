@@ -7,7 +7,7 @@ const config = {
   tagline: 'A Complete AI-Native Textbook',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://quarter-4-book-hackathon.vercel.app/',
   baseUrl: '/',
 
   organizationName: 'facebook', 
